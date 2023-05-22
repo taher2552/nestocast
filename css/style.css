@@ -240,8 +240,15 @@
     margin-top: 20px;
   }
 
+  .input_pool_top{
+    flex-wrap: wrap;
+  }
+
+  .input_pool_right{
+    flex-wrap: wrap;
+  }
+
   .pagination {
-    display: inline-block;
     margin-right: 60px;
   }
   
@@ -257,6 +264,11 @@
 
   .pagination .arrow{
     border:none;
+    
+  }
+
+  .pagination .arrow_left{
+    margin-left: 0;
   }
 
   .input_box2{
@@ -331,8 +343,8 @@
 
   .add_service{
     background-color: var(--white);
-    width:500px;
-    height: 250px;
+    width:40%;
+    height:250px;
     margin: 30px auto;
     border-radius: 20px;
     box-shadow: 5px 10px 8px var(--gray);
@@ -375,7 +387,7 @@
 }
 
 #service_url{
-  width: 300px;
+  width: 100%;
   padding:5px;
   outline: none;
   border: 1px solid var(--gray);
@@ -383,7 +395,7 @@
   margin: 10px 0;
 }
 #service_name{
-  width: 215px;
+  width: 60%;
   padding:5px;
   outline: none;
   border: 1px solid var(--gray);
@@ -412,17 +424,40 @@
    .ip_text{
     font-size: 15px;
    }
+
+   .pagination span{
+    margin-left: 10px;
+    padding: 4px;
+   }
+
+   .star{
+    justify-content: center;
+    text-align: center;
+   }
    
     }
 
     @media only screen and (max-width: 420px){
       .ip_text{
         font-size: 13px;
+        text-align: center;
        }
+
+       .pagination span{
+        margin-left: 5px;
+       }
+        
+       .cards_layout{
+        flex-wrap: wrap;
+        text-align: center;
+       }
+     
+
+      
     }
 
    
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 370px) {
 
       .header_right{
         flex-direction: column;
@@ -435,6 +470,12 @@
       .ip_text{
         font-size: 10px;
        }
+
+       .cards_layout{
+        flex-wrap: wrap;
+       }
+
+       
 
     }
     @media only screen and (max-width: 750px) {
@@ -452,8 +493,72 @@
         width:80%;
         margin: 0 auto;
       }
+
+      .star{
+        flex-wrap: wrap;
+       }
+
+       .star_service{
+        height: 100%;
+       }
       
 
     }
+
+
+    @media only screen and (max-width: 1200px) {
+      .cards{
+        grid-template-columns: auto auto;
+      }
+
+    }
+    @media only screen and (max-width: 1200px) {
+      .cards{
+        grid-template-columns: auto auto;
+      }
+
+    }
+    @media only screen and (max-width: 650px) {
+      .cards{
+        grid-template-columns: auto;
+      }
+
+      .add_service{
+        width:80%;
+      }
+
+      .cards_layout{
+       justify-content: center;
+       width:80%;
+       margin: 0 auto;
+      }
+
+    }
+    @media only screen and (max-width: 512px) {
+     .ip_address img{
+      width:50%;
+      height: 50%;
+      margin: 10px auto;
+     }
+
+     .ip_details{
+      width:100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+     }
+
+     .ip_text{
+      text-align: center;
+     }
+
+     .stream{
+      width:100%;
+      margin: 0 auto;
+      justify-content: center;
+     }
+
+    }
+
+
   
   /* media query section ends here  */

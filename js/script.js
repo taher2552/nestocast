@@ -62,22 +62,22 @@ for(let i=0;i<12;i++){
         
 <div class="flex ip_address">
 <img src="./image/img-${imageNumber}.jpg" alt=""> 
-<div>
+<div class="ip_details">
   <p class="ip_text"><b>${networkName}</b><span class="green-font">[${mbps} Mbps]</span></p>
-  <p class="link_color ip_text ">udp://224.1.1.101.:1234@192.168.101.200</p>
+  <p class="link_color ip_text ">udp://224.1.1.101.:1234@192.168</p>
  </div> 
 </div>
 
 
 
-<div>
-  <p class="link_color ip_text">udp://224.1.1.101.:1234@192.168.101.200</p>
+<div class="ip_details">
+  <p class="link_color ip_text">udp://224.1.1.101.:1234@192.168</p>
   <p class="link_color ip_text">720x576,H264,ACC,Progressive</p>
 </div>
 
-<div class="flex">
-  <div>
-      <p><b>${mbps2} Mbps</b></p>
+<div class="flex stream">
+  <div >
+      <p ><b>${mbps2} Mbps</b></p>
       <p class='${classColor}'>${streaming}</p>
   </div>
   <div>
