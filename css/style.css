@@ -244,12 +244,18 @@
     flex-wrap: wrap;
   }
 
+ 
+
   .input_pool_right{
     flex-wrap: wrap;
   }
 
   .pagination {
     margin-right: 60px;
+  }
+
+  .pagination .arrow_left{
+    margin-left: 0;
   }
   
   .pagination span {
@@ -443,14 +449,19 @@
         text-align: center;
        }
 
-       .pagination span{
-        margin-left: 5px;
-       }
+       
         
        .cards_layout{
         flex-wrap: wrap;
         text-align: center;
        }
+
+       .pagination{
+        font-size: 8px;
+       
+       }
+
+      
      
 
       
@@ -501,6 +512,8 @@
        .star_service{
         height: 100%;
        }
+
+      
       
 
     }
@@ -512,12 +525,38 @@
       }
 
     }
-    @media only screen and (max-width: 1200px) {
-      .cards{
-        grid-template-columns: auto auto;
+    @media only screen and (max-width: 900px) {
+      .input_pool_top{
+        justify-content: center;
+        
+       }
+
+       .input_pool_top p{
+        margin-bottom: 20px;
+        margin-top: 10px;
+       }
+
+       .input_pool_right{
+        justify-content: center;
+       }
+
+       .pagination{
+        margin-bottom: 20px;
+       }
+
+       .pagination .arrow_left{
+        margin-left: 50px;
+        margin-right: 0px;
       }
 
+      .pagination .arrow_right{
+        margin-left: 25px;
+       }
+
+
+
     }
+ 
     @media only screen and (max-width: 650px) {
       .cards{
         grid-template-columns: auto;
@@ -534,7 +573,7 @@
       }
 
     }
-    @media only screen and (max-width: 512px) {
+    @media only screen and (max-width: 522px) {
      .ip_address img{
       width:50%;
       height: 50%;
@@ -556,6 +595,18 @@
       margin: 0 auto;
       justify-content: center;
      }
+
+     .pagination span{
+      margin-left: 10px;
+      padding: 4px;
+     
+     }
+
+     .pagination .arrow_right{
+      margin-left: 0px;
+     }
+
+     
 
     }
 
