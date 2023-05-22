@@ -287,6 +287,10 @@
     
 }
 
+.new_input{
+  flex-wrap: wrap;
+}
+
   .btn{
     background-color: var(--secondary);
     border-radius: 5px;
@@ -440,6 +444,18 @@
     justify-content: center;
     text-align: center;
    }
+
+
+   .new_input{
+    justify-content: center;
+    align-items: center;
+   }
+
+  .btn{
+    margin-top: 10px;
+  }
+
+  
    
     }
 
@@ -460,7 +476,10 @@
         font-size: 8px;
        
        }
-
+      
+       .input_box2{
+        margin-top: 10px;
+       }
       
      
 
