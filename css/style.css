@@ -49,6 +49,11 @@
  color:var(--gray)
 }
 
+.max_width{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
   /* general css ends here  */
 
   /* css for header starts here  */
@@ -56,6 +61,7 @@
 .header{
     background-color: var(--white) ;
     padding:3px 50px;
+    flex-wrap: wrap;
 
     
 }
@@ -94,6 +100,7 @@
 
 .transcoder_section{
     padding:20px 50px;
+    flex-wrap: wrap;
     
 
 }
@@ -110,13 +117,18 @@
     margin-bottom: 10px;
   }
 
-  .transcoder_left{
+  .transcoder_right{
     width:55%;
+    margin-right: 5%;
+  }
+  .transcoder_left{
+    width:40%;
   }
 
-  .transcoder_left p{
+  .transcoder_right p{
     font-size: 18px;
     color:var(--para-color);
+    text-align: justify;
    
   }
 
@@ -174,6 +186,7 @@
   margin: 20px 50px;
   border-radius: 20px;
   padding:10px;
+  flex-wrap: wrap;
  }
 
  .network_section img{
@@ -181,6 +194,10 @@
   width:70px;
   border-radius: 10px;
   margin-right: 10px;
+ }
+
+ .ip_address{
+  flex-wrap: wrap;
  }
 
  .fa-angle-right{
@@ -378,3 +395,65 @@
 
 
   /* add service section ends here  */
+
+
+  /* media query section starts here  */
+
+  @media only screen and (max-width: 500px) {
+    .header {
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+
+    .transcoder h1{
+      font-size: 20px;
+    }
+
+   .ip_text{
+    font-size: 15px;
+   }
+   
+    }
+
+    @media only screen and (max-width: 420px){
+      .ip_text{
+        font-size: 13px;
+       }
+    }
+
+   
+    @media only screen and (max-width: 360px) {
+
+      .header_right{
+        flex-direction: column;
+      }
+
+      .fa-cog, .bell{
+        margin-bottom: 10px;
+      }
+
+      .ip_text{
+        font-size: 10px;
+       }
+
+    }
+    @media only screen and (max-width: 750px) {
+
+      .transcoder_section{
+        flex-direction: column;
+        
+      }
+
+      .input_box{
+        margin-top: 20px;
+      }
+
+      .transcoder_left{
+        width:80%;
+        margin: 0 auto;
+      }
+      
+
+    }
+  
+  /* media query section ends here  */

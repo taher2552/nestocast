@@ -60,19 +60,19 @@ for(let i=0;i<12;i++){
     <section class="network_section flex">
      
         
-<div class="flex">
+<div class="flex ip_address">
 <img src="./image/img-${imageNumber}.jpg" alt=""> 
 <div>
-  <p><b>${networkName}</b><span class="green-font">[${mbps} Mbps]</span></p>
-  <p class="link_color">udp://224.1.1.101.:1234@192.168.101.200</p>
+  <p class="ip_text"><b>${networkName}</b><span class="green-font">[${mbps} Mbps]</span></p>
+  <p class="link_color ip_text ">udp://224.1.1.101.:1234@192.168.101.200</p>
  </div> 
 </div>
 
 
 
 <div>
-  <p class="link_color">udp://224.1.1.101.:1234@192.168.101.200</p>
-  <p class="link_color">720x576,H264,ACC,Progressive</p>
+  <p class="link_color ip_text">udp://224.1.1.101.:1234@192.168.101.200</p>
+  <p class="link_color ip_text">720x576,H264,ACC,Progressive</p>
 </div>
 
 <div class="flex">
