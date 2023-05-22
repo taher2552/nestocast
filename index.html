@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nestocast probe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+
+    <!-- top most header section start here   -->
+
+    <header class="header flex">
+        <div>
+            <img src="./image/logo.png" alt="">
+        </div>
+
+        <div class="flex">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <div>
+                <span class="red-font space">03</span>
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </div>
+            <div>
+                <span class="green-font">Navneet Srivastava</span>
+                <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- top most header section ends here   -->
+
+
+
+    <!-- section below top most header starts from here  -->
+
+    <section class="transcoder_section flex">
+        <div class="transcoder_left">
+             <div class="flex transcoder">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <h1>TRANSCODER1</h1>
+             </div>
+            
+            <p>A video transcoder offers the capabilities of transmuxinng, transsizzing, transrating and
+                transcoding.Providing flexibility in manipulating video stream for various process such as
+                compatibility, optimization and format conversion. </p>
+
+        </div>
+
+        <div class="transcoder_left">
+
+            <div class="transcoder_input_box_section flex">
+                
+                    <!-- <i class="fa fa-search fa-lg" aria-hidden="true"></i> -->
+                    <input type="text" class="input_box">
+                    <i class="fa fa-navicon"></i>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+    
+            <div class="flex import_export green-font">
+    
+                <div>
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                    <span>Import</span>
+                </div>
+                <div>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                    <span>Export</span>
+                </div>
+    
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- section below top most header ends here  -->
+
+    <!-- cartoon network and abp news section starts here -->
+
+    <section class="network_wrapper">
+    </section>
+
+    <section class="graph">
+        
+            <p class="system_status"><b>System Status</b></p>
+            <img src="./image/graph.png" alt="" srcset="">
+      
+    </section>
+    <!-- cartoon network and abp news section ends here -->
+
+    <!-- input pool section starts here  -->
+
+ <section class="input_pool_section">
+    <div class="flex">
+        <div>
+            <p>Input Pool</p>
+        </div>
+
+        <div class="flex">
+            <div class="pagination">
+                <span class="arrow"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span class="arrow"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></span>
+              </div>
+            <div>
+                <i class="fa fa-navicon navicon"></i>
+                <input type="text" class="input_box2">
+                <button class="btn">Add New</button>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+
+<div class="cards">
+</div>
+
+
+ </section>
+
+
+
+    <!-- input pool section ends here  -->
+
+
+    <!-- add service section starts here  -->
+    
+    <section class="add_service">
+
+      <div class="flex add_title">
+        <p>Add new Service</p>
+        <p>X</p>
+        
+      </div>
+      <hr class="hr">
+
+      <div class="flex star">
+
+        <div class="star_logo">
+          <img src="./image/star_logo.png" alt="" srcset="">
+        </div>
+  
+        <form action="">
+          <label for="service_url">Service URL</label> <br>
+          <input type="text" placeholder="122.101@121.04.202.01" id="service_url"><br>
+          <label for="service_name">Source Name</label><br>
+          <input type="text" placeholder="Service Name" id="service_name">
+          <button class="btn">Add New</button>
+        </form>
+
+      </div>
+
+
+
+
+  
+    </section>
+
+
+
+    <section class="add_service">
+
+      <div class="flex add_title">
+        <p>Adding new Service</p>
+        <p>X</p>
+        
+      </div>
+      <hr>
+
+      <div class="add_msg">
+        <p>Trying to join multicast group (122.101@121.04.202.01) to add star plus as service</p>
+      </div>
+
+      <div class="loader_img">
+        <img src="./image/loader.jpg" alt="">
+      </div>
+  
+    </section>
+
+    <section class="add_service">
+
+      <div class="flex add_title">
+        <p>Failed To Add</p>
+        <p>X</p>
+        
+      </div>
+      <hr>
+
+      <div class="add_msg">
+        <p>Failed to join multicast group 122.101@121.04.202.01</p>
+      </div>
+
+      <div class="loader_img">
+        <img src="./image/red_cross.jpg" alt="">
+      </div>
+  
+    </section>
+
+
+
+
+    <!-- add service section ends here  -->
+ <script src="./js/script.js"></script>
+</body>
+
+</html>

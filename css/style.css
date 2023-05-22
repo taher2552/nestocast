@@ -1,0 +1,380 @@
+
+/* reset css start here  */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+/* reset css ends here  */
+
+/* general css start here  */
+
+:root {
+    --primary: #d9d9d9;
+    --secondary: #311eec;
+    --white: #fff;
+    --gray: gray;
+    --font-red: #f9758d;
+    --font-light-green: #8dd4a5;
+    --font-green: #07772d;
+    --para-color:rgb(65, 62, 62);
+
+  }
+
+  .container{
+    background-color: var(--primary);
+    
+  }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .red-font{
+    color:var(--font-red)
+}
+
+.green-font{
+    color:var(--font-green);
+    
+}
+
+.link_color{
+ color:var(--gray)
+}
+
+  /* general css ends here  */
+
+  /* css for header starts here  */
+
+.header{
+    background-color: var(--white) ;
+    padding:3px 50px;
+
+    
+}
+
+.header img{
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.fa-bell-o{
+    margin-right: 15px;
+    margin-left: -4px;
+    color:var(--font-green)
+}
+
+
+
+.space{
+    margin-left: 15px;
+}
+
+.fa-user-circle-o{
+    color:var(--font-red);
+    margin-left: 5px;
+    
+}
+
+.fa-cog{
+    color: var(--font-green);
+}
+
+  /* css for header ends here  */
+
+  /* css for section below the header (transcoder section) starts from here  */
+
+.transcoder_section{
+    padding:20px 50px;
+    
+
+}
+
+
+  .transcoder{
+    justify-content: flex-start;
+    
+  }
+
+  .transcoder h1{
+    margin-left: 5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .transcoder_left{
+    width:55%;
+  }
+
+  .transcoder_left p{
+    font-size: 18px;
+    color:var(--para-color);
+   
+  }
+
+  /* transcoder right side css starts here  */
+
+.transcoder_input_box_section{
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.input_box{
+    padding:8px;
+    width:400px;
+    margin-right: 25px;
+    border:2px solid gray;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+/* .fa-search{
+    border:2px solid gray;
+    padding: 7.5px;
+    border-right:none;
+    background-color: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color:gray;
+} */
+
+.fa-navicon{
+  margin-right: 25px;
+}
+
+.import_export{
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.fa-arrow-down{
+  margin-left: 25px;
+}
+
+  /* transcoder right side css ends here  */
+
+
+  /* css for section below the header (transcoder section) ends here  */
+
+
+  /* network section css starts here  */
+
+ .network_section{
+  background-color: var(--white);
+  margin: 20px 50px;
+  border-radius: 20px;
+  padding:10px;
+ }
+
+ .network_section img{
+  height: 70px;
+  width:70px;
+  border-radius: 10px;
+  margin-right: 10px;
+ }
+
+ .fa-angle-right{
+  margin-left: 10px;
+ }
+
+ 
+
+  /* network section css ends here  */
+
+  /* graph section css start here  */
+
+  .graph{
+    background-color: var(--white);
+    margin: 10px 50px;
+    padding:10px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .graph img{
+    width:100%;
+    height: 200px;
+    
+  }
+
+  .system_status{
+    padding-left: 25px;
+    margin-bottom: 20px; 
+  }
+  /* graph section css ends here  */
+
+  /* input pool header section start here  */
+
+  .input_pool_section{
+    background-color: var(--white);
+    margin: 10px 50px;
+    border-radius: 20px;
+    padding:10px;
+    margin-top: 20px;
+  }
+
+  .pagination {
+    display: inline-block;
+    margin-right: 60px;
+  }
+  
+  .pagination span {
+    color: var(--secondary);
+    border:1px solid var(--secondary);
+    border-radius: 10px;
+    float: left;
+    padding: 4px 8px;
+    text-decoration: none;
+    margin-left: 25px;
+  }
+
+  .pagination .arrow{
+    border:none;
+  }
+
+  .input_box2{
+    padding:5px 10px;
+    width:200px;
+    margin-right: 25px;
+    border:2px solid rgb(197, 185, 185);
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+  .btn{
+    background-color: var(--secondary);
+    border-radius: 5px;
+    color:var(--white);
+    padding:5px 10px;
+    border:none;
+    cursor: pointer;
+  }
+
+  .navicon{
+    color:rgb(197, 185, 185);
+  }
+
+ 
+  /* input pool header section ends here  */
+
+  /* cards section starts here  */
+
+  .cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto ;
+    gap: 20px;
+  }
+
+  .cards img{
+    height: 70px;
+    width: 70px;
+    border: 1px double  var(--gray);
+    border-radius: 5px;
+  }
+
+  .cards_layout{
+    justify-content: flex-start;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+  }
+
+  .network_img{
+    margin:10px;
+  }
+
+  .network_details h3, .network_details p{
+    margin-bottom: 5px;
+  }
+
+  .network_details{
+    margin-right: 10px;
+ 
+  }
+
+  .font_Size{
+    font-size: 12px;
+  }
+  /* cards section ends here  */
+
+
+  /* add service section starts here  */
+
+  .add_service{
+    background-color: var(--white);
+    width:500px;
+    height: 250px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px var(--gray);
+    padding: 10px;
+
+  }
+
+  .add_title{
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .add_msg{
+    text-align: center;
+    margin:30px 0;
+  }
+
+.loader_img img{
+  height:20%;
+  width:20%;
+  margin-left: 40%;
+  
+}
+
+.star{
+  justify-content: flex-start;
+}
+
+.star_logo img{
+  height: 130px;
+  width:130px;
+  margin-right: 20px;
+  border: 1px solid var(--gray);
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.hr{
+  margin-bottom: 10px;
+}
+
+#service_url{
+  width: 300px;
+  padding:5px;
+  outline: none;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  margin: 10px 0;
+}
+#service_name{
+  width: 215px;
+  padding:5px;
+  outline: none;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  margin: 10px 0;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+
+  /* add service section ends here  */
